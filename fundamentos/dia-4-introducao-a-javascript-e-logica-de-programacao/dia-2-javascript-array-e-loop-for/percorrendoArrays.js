@@ -5,5 +5,10 @@ let somaTodos = 0;
      somaTodos += numbers[index];
  }
  let mediaAritmetica = somaTodos / numbers.length;
- console.log(mediaAritmetica);
  
+ if(mediaAritmetica > 20){
+     console.log('valor maior que 20');
+ }else{
+     console.log('valor menor ou igual a 20')
+ }
+
