@@ -4,5 +4,6 @@ let somaTodos = 0;
      
      somaTodos += numbers[index];
  }
- console.log(somaTodos)
-
+ let mediaAritmetica = somaTodos / numbers.length;
+ console.log(mediaAritmetica);
+ 
