@@ -7,18 +7,20 @@ let info = {
 // console.log("Bem-vinda, " + info.personagem)
 
 
-let name = 'Marta';
-let lastName = 'Silva';
-let age = 34;
-let medals = { golden: 2, silver: 3 };
-
-let jogadora = {
-  name: 'Marta',
-  lastName: 'Silva',
-  age: 34,
-  medals: {golden: 2,
-  silver: 3}
-  
+let singer = {
+  name: 'Milton',
+  lastName: 'Nascimento',
+  nickName: 'Bituca',
+  age: 77,
+  bestAlbuns: ['Travessia', 'Clube de Esquina', 'Minas'],
+  bornInfo: {
+    city: 'Rio de Janeiro',
+    estate: 'RJ'
+  }
 };
 
-console.log(jogadora)
+console.table(singer)
+console.log('o cantor ' +singer.name+ ' '+singer.lastName+' possui '+singer.age+' anos.');
+
+singer['musicaQueMarcou'] = 'Amigo';
+console.log(singer.nickName+' nasceu na cidade do :'+singer.bornInfo.city+' e está agora com :'+singer.age+' anos de pura música!')
