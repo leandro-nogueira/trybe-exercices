@@ -6,21 +6,27 @@ let info = {
 
 // console.log("Bem-vinda, " + info.personagem)
 
+info['recorrente'] = 'sim';
 
-let singer = {
-  name: 'Milton',
-  lastName: 'Nascimento',
-  nickName: 'Bituca',
-  age: 77,
-  bestAlbuns: ['Travessia', 'Clube de Esquina', 'Minas'],
-  bornInfo: {
-    city: 'Rio de Janeiro',
-    estate: 'RJ'
-  }
-};
+console.log(info)
+ for(let caracteristica in info){
+   console.log(caracteristica)
+ }
 
-console.table(singer)
-console.log('o cantor ' +singer.name+ ' '+singer.lastName+' possui '+singer.age+' anos.');
+// let singer = {
+//   name: 'Milton',
+//   lastName: 'Nascimento',
+//   nickName: 'Bituca',
+//   age: 77,
+//   bestAlbuns: ['Travessia', 'Clube de Esquina', 'Minas'],
+//   bornInfo: {
+//     city: 'Rio de Janeiro',
+//     estate: 'RJ'
+//   }
+// };
 
-singer['musicaQueMarcou'] = 'Amigo';
-console.log(singer.nickName+' nasceu na cidade do :'+singer.bornInfo.city+' e está agora com :'+singer.age+' anos de pura música!')
+// console.table(singer)
+// console.log('o cantor ' +singer.name+ ' '+singer.lastName+' possui '+singer.age+' anos.');
+
+// singer['musicaQueMarcou'] = 'Amigo';
+// console.log(singer.nickName+' nasceu na cidade do :'+singer.bornInfo.city+' e está agora com :'+singer.age+' anos de pura música!')
