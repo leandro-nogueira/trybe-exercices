@@ -35,9 +35,9 @@ input.addEventListener('input', function(event){ //função anônima, já como p
 });// por isso o parentese só fecha aqui em baixo, depois de declarado oq é para acontecer na função
 
 
-// myWebpage.addEventListener('dblclick', function(){
-//   window.location.replace('https://leo2903lan.github.io/');
-// });
+myWebpage.addEventListener('dblclick', function(){
+  window.location.replace('https://leo2903lan.github.io/'); // captura do endereçõ atual pelo e fazendo a troca por outro endereço.
+});
 
 myWebpage.addEventListener('mouseover', function(event){
 event.target.style.color = 'blue';
