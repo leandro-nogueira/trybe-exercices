@@ -22,12 +22,14 @@ firstDiv.addEventListener('dblclick', resetText);
 function changeClassTech(event){
  document.querySelector('.tech').classList.remove('tech');
  event.target.classList.add('tech');
+ input.value = '';
 }
 firstDiv.addEventListener('click', changeClassTech);
 secondDiv.addEventListener('click', changeClassTech);
 thirdDiv.addEventListener('click', changeClassTech);
 
-function likeTechName(){
-  
-}
 
+input.addEventListener('keypress', function(event){
+  let techName = document.querySelector('.tech');
+  techName.innerText = event.target.value;
+})
