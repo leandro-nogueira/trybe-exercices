@@ -28,8 +28,20 @@ firstDiv.addEventListener('click', changeClassTech);
 secondDiv.addEventListener('click', changeClassTech);
 thirdDiv.addEventListener('click', changeClassTech);
 
-
-input.addEventListener('keypress', function(event){
+//input se refere a variável criada lá em cima para armazenar o elento de input.
+input.addEventListener('input', function(event){ //função anônima, já como paramentro dentro do addEventListener
   let techName = document.querySelector('.tech');
-  techName.innerText = event.target.value;
-})
+  techName.innerText = event.target.value;  
+});// por isso o parentese só fecha aqui em baixo, depois de declarado oq é para acontecer na função
+
+
+// myWebpage.addEventListener('dblclick', function(){
+//   window.location.replace('https://leo2903lan.github.io/');
+// });
+
+myWebpage.addEventListener('mouseover', function(event){
+event.target.style.color = 'blue';
+});
+myWebpage.addEventListener('mouseout', function(event){
+event.target.style.color = 'unset';
+});
