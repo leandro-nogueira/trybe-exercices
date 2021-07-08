@@ -63,6 +63,18 @@
       tagH1.innerText='Exercício 5.2 - JavaScript DOM';
       bodyPai.appendChild(tagH1);   
       
+      let divMainContent = document.createElement('div');
+      divMainContent.className = 'main-content';
+      bodyPai.appendChild(divMainContent)
+      
+      let divCenter = document.createElement('div');
+      divCenter.className = 'center-content';
+      divMainContent.appendChild(divCenter);
+      
+      console.log(divMainContent)
+      
+
+
     </script>
   </body>
 </html>
