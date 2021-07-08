@@ -61,9 +61,8 @@ document.getElementsByClassName('center-content')[0].style.backgroundColor='whit
 
 document.getElementsByTagName('h1')[0].innerText='Exercício 5.1 - JavaScript';
 //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-document.getElementsByTagName('p')[0];
-
-
+ let maiuscula = document.getElementsByTagName('p')[0].innerHTML.toUpperCase();//peguei o elemento e tranformei ele em maiuscula
+ document.getElementsByTagName('p')[1].innerText = maiuscula;// coloquei o elemento já tranformado pelo innerText dentro da nova tag.
 
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 let arrayParagrafos = document.getElementsByTagName('p')
