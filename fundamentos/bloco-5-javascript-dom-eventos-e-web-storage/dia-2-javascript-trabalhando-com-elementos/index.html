@@ -87,19 +87,18 @@
       imagem.className = 'small-image';
       left.appendChild(imagem);
       
-      let listaNo = document.createElement('ol');
-      let listaItem = document.createElement('li');
+      let listaNo = document.createElement('ul');
+      right.appendChild(listaNo);
+      
       let arrayParaLista = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-      
-      arrayParaLista.forEach(function(numeral){
-        
-        console.log(listaItem);
+      for(i = 0; i < arrayParaLista.length; i += 1){
+        let listaItem = document.createElement('li');
+        listaItem.innerText= arrayParaLista[i]
+        listaNo.appendChild(listaItem)
+        console.log(listaNo)
+      }
 
-      })
-    
-    
-      
-      
+          
 
 
     </script>
