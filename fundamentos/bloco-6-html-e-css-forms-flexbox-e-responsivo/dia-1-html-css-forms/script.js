@@ -12,3 +12,14 @@ function createStateOptions () {
     }
 }
 createStateOptions ()
+
+const button = document.querySelector('#enviar')
+const divPai = document.querySelector('main');
+const divConteudo = document.createElement('div')
+
+function printValues(event) {
+  event.preventDefault();
+  divConteudo.
+  divPai.appendChild(divConteudo);
+}
+button.addEventListener('click', printValues);
