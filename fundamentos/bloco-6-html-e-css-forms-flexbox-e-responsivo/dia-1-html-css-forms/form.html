@@ -6,47 +6,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulários</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <form action="" method="get">
-  <fieldset>
-    
-    <label for="nome">Nome:
-      <input type="text" name="nome" id="nome" maxlength="40" required>
-    </label>
-    <br>
+    <fieldset>
 
-    <label for="email">E-mail:</label>
-    <input type="email" name="email" id="email" maxlength="50" required>
-    <br>
-    <label for="cpf">CPF:</label>
-    <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="digite apenas números" required>
-    <br>
-    <label for="endereco">Endereço:</label>
-    <input type="text" name="endereco" id="endereco" maxlength="200" required>
+      <label for="nome">Nome:
+        <input type="text" name="nome" id="nome" maxlength="40" required>
+      </label>
+      <br>
 
-    <br>
-    <label for="cidade">Cidade:</label>
-    <input type="text" name="cidade" id="cidade" maxlength="28" required>
+      <label for="email">E-mail:
+        <input type="email" name="email" id="email" maxlength="50" required>
+      </label>
+      <br>
+      <label for="cpf">CPF:
+        <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="digite apenas números" required>
+      </label>
+      <br>
+      <label for="endereco">Endereço:
+        <input type="text" name="endereco" id="endereco" maxlength="200" required>
+      </label>
+      <br>
+      <label for="cidade">Cidade:
+        <input type="text" name="cidade" id="cidade" maxlength="28" required>
+      </label>
+      <br>
+      <label for="estado">estado
+        <select name="estado" id="estado" required>
+      </label>
+      <br>
 
-    <br>
-    <label for="estados">estado
-      <select name="estado" id="estado" required>
-    </label>
-    <br>
+      <label for="casa">
+        <input type="radio" name="tipo" id="casa" value="casa">Casa
+      </label>
 
-    <label for="casa">
-      <input type="radio" name="tipo" id="casa" value="casa">Casa
-    </label>
+      <label for="apto">
+        <input type="radio" name="tipo" value="apto" id="apto">Apartamento
+      </label>
+    </fieldset>
 
-    <label for="apto">
-      <input type="radio" name="tipo" value="apto" id="apto">Apartamento
-    </label>
-  </fieldset>
+    <fieldset>
 
+      <label for="resumo">Último Emprego
+        <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+      </label>
 
-</form>
+    </fieldset>
+
+  </form>
+  <script src="script.js"></script>
 </body>
 
 </html>
