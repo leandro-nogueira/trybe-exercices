@@ -1,0 +1,26 @@
+.btn {
+  margin: 15px;
+}
+
+.botoes {
+  margin: 10px auto;
+  
+  width: 300px;
+}
+
+footer {
+  text-align: center;
+  font-weight: 900;
+  padding: 25px;
+}
+
+body {
+  background-color: bisque;
+}
+
+header {
+  text-align: center;
+  padding: 25px;
+  text-shadow: 2px 2px 3px;
+  color: rgb(94, 87, 27);
+}
