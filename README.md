@@ -27,7 +27,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-014-b-project-lessons-learned)_
+- [x] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-014-b-project-lessons-learned/tree/leandro-nogueira-lessons-learned-project)_
 
 ##### Bloco 4: IntroduÃ§Ã£o - JavaScript :white_check_mark:
 
@@ -35,7 +35,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-014-b-project-playground-functions)_
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-014-b-project-playground-functions/tree/leandro-nogueira-playground-functions)_
 
 ##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos :hourglass_flowing_sand:
 
@@ -44,8 +44,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _[Projeto - Meme Generator]()_
-- [ ] 5-6: _[Projeto - Arte com Pixels]()_
-- [ ] 5-7: _[Projeto - Lista de tarefas]()_
+- [x] 5-6: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-014-b-project-pixels-art/tree/leandro-nogueira-project-pixels-art)_
+- [x] 5-7: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-014-b-project-todo-list/tree/leandro-nogueira-todo-list-project)_
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
