@@ -37,12 +37,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-4: _JavaScript - Objetos e funções_
 - [x] 4-5: _[Projeto - Playground Functions](https://github.com/tryber/sd-014-b-project-playground-functions/tree/leandro-nogueira-playground-functions)_
 
-##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos :hourglass_flowing_sand:
+##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos :white_check_mark:
 
 - [x] 5-1: _JavaScript - DOM e seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
-- [ ] 5-4: _JavaScript - Web Storage_
+- [x] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _[Projeto - Meme Generator]()_
 - [x] 5-6: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-014-b-project-pixels-art/tree/leandro-nogueira-project-pixels-art)_
 - [x] 5-7: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-014-b-project-todo-list/tree/leandro-nogueira-todo-list-project)_
@@ -51,9 +51,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 6: HTML & CSS avançado :hourglass_flowing_sand:
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Part 1_
+- [x] 6-1: _HTML & CSS - Forms_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
