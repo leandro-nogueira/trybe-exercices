@@ -1,0 +1,36 @@
+body {
+  font-size: 1.3em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.4em
+}
+
+img {
+  max-width: 100%;
+  
+}
+
+figure {
+  margin: 40px auto;
+  text-align: center;
+  
+  
+}
+
+@media screen and (min-width: 499px) { 
+  body {
+    background-color: yellowgreen;
+  }
+  main {
+    display: flex;
+    flex-direction: column;    
+  }
+  figure {
+    
+  }
+}
