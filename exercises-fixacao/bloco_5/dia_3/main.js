@@ -28,7 +28,7 @@ firstDiv.addEventListener('click', changeClassTech);
 secondDiv.addEventListener('click', changeClassTech);
 thirdDiv.addEventListener('click', changeClassTech);
 
-//input se refere a variável criada lá em cima para armazenar o elento de input.
+//input se refere a variável criada lá em cima para armazenar o elemento de input.
 input.addEventListener('input', function(event){ //função anônima, já como paramentro dentro do addEventListener
   let techName = document.querySelector('.tech');
   techName.innerText = event.target.value;  
