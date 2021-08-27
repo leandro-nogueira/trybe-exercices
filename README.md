@@ -8,7 +8,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimento Web :white_check_mark:
 
 ##### Bloco 1: Introdução - Unix & Shell :white_check_mark:
 
@@ -73,18 +73,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [x] 8-5: _[Projeto - Zoo functions](https://github.com/tryber/sd-014-b-project-zoo-functions/tree/leandro-nogueira-zoo-functions-project)_
 
-##### Bloco 9: Assincronicidade & Callbacks :hourglass_flowing_sand:
+##### Bloco 9: Assincronicidade & Callbacks :white_check_mark:
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-3: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-014-b-project-shopping-cart/pull/88)_
 
-##### Bloco 10: Jest :hourglass_flowing_sand:
+##### Bloco 10: Jest :white_check_mark:
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
+- [x] 10-1: _Primeiros passos no Jest_
+- [x] 10-2: _Jest - Testes Assíncronos_
+- [x] 10-3: _Jest - Simulando comportamentos_
+- [x] 10-4: _[Projeto - Jest Assíncrono e Mocking](https://github.com/tryber/sd-014-b-project-jest/pull/117)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
