@@ -24,12 +24,18 @@ class DadJoke extends React.Component {
     this.fetchJoke();
   }
 
+  saveJoke(){
+    // this.setState({
+    //   storedJoke
+    // })
+  }
+
   renderJoke() {
-    const {jokeObj} = this.state;
-    
+    const {jokeObj} = this.state;    
     return (
       <>
         <p>{jokeObj.joke}</p>
+        <button type="button" onClick={ this.saveJoke }>Salvar piada</button>
       </>
     );
   }  
