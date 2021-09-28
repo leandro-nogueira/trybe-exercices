@@ -13,9 +13,11 @@ class App extends React.Component {
   }
 
   handleChange1 = () => {
+    const { numeroDeCliques1 } = this.state;
     this.setState((previewState, _props) => ({
       numeroDeCliques1: previewState.numeroDeCliques1 + 1,
     }))
+    if (numeroDeCliques1 % 2) console.log('verde')
   }
   handleChange2 = () => {
     this.setState((estadoAnterior, _props) => ({
