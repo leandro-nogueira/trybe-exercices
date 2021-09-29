@@ -12,22 +12,35 @@ class App extends React.Component {
 
   }
 
+  colorChange = (nClick) => {
+    return nClick % 2 ? 'green' : 'red'
+  }
+
   handleChange1 = () => {
     const { numeroDeCliques1 } = this.state;
     this.setState((previewState, _props) => ({
       numeroDeCliques1: previewState.numeroDeCliques1 + 1,
-    }))
-    if (numeroDeCliques1 % 2) console.log('verde')
+    }), () => {
+      console.log(this.colorChange(numeroDeCliques1))
+    })     
   }
+
   handleChange2 = () => {
+    const { numeroDeCliques2 } = this.state;
     this.setState((estadoAnterior, _props) => ({
       numeroDeCliques2: estadoAnterior.numeroDeCliques2 + 1,
-    }))
+    }), () => {
+      console.log(this.colorChange(numeroDeCliques2))
+    })
   }
+
   handleChange3 = () => {    
+    const { numeroDeCliques3 } = this.state;
     this.setState((estadoAnterior, _props) => ({
       numeroDeCliques3: estadoAnterior.numeroDeCliques3 + 1,
-    }))
+    }), () => {
+      console.log(this.colorChange(numeroDeCliques3))
+    })
   }
 
   reset = () => {
@@ -61,14 +74,14 @@ class App extends React.Component {
     return (
       <div className="App-header">
         <div>
-          <button onClick={ this.zerar1 }>ZERAR-1</button>
-          <button onClick={ this.zerar2 }>ZERAR-2</button>
-          <button onClick={ this.zerar3 }>ZERAR-3</button>
+          <button onClick={ this.zerar1 } style={{background: this.colorChange(numeroDeCliques1)}} >ZERAR-1</button>
+          <button onClick={ this.zerar2 } style={{background: this.colorChange(numeroDeCliques2)}} >ZERAR-2</button>
+          <button onClick={ this.zerar3 } style={{background: this.colorChange(numeroDeCliques3)}} >ZERAR-3</button>
         </div>
-        <div>
-          <button onClick={ this.handleChange1 } >{ numeroDeCliques1 }</button>  
-          <button onClick={ this.handleChange2 } >{ numeroDeCliques2 }</button>  
-          <button onClick={ this.handleChange3 } >{ numeroDeCliques3 }</button>  
+        <div>C
+          <button onClick={ this.handleChange1 } style={{background: this.colorChange(numeroDeCliques1)}} >Contador de cliques = { numeroDeCliques1 }</button>  
+          <button onClick={ this.handleChange2 } style={{background: this.colorChange(numeroDeCliques2)}} >Contador de cliques = { numeroDeCliques2 }</button>  
+          <button onClick={ this.handleChange3 } style={{background: this.colorChange(numeroDeCliques3)}} >Contador de cliques = { numeroDeCliques3 }</button>  
         </div>
         <button onClick={ this.reset }>ReseteTOTAL</button>
       </div>
