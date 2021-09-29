@@ -11,6 +11,8 @@ class DadosPessoais extends React.Component {
     let errorName = undefined;
     if (nome.length < 5 && nome.length !== 0) errorName = "Coloque seu nome completo!"
 
+    
+
     return (
       <fieldset>
         <legend>Dados pessoais</legend>
@@ -25,6 +27,7 @@ class DadosPessoais extends React.Component {
             value={ email }
           />
         </label>
+        <br />
         <br />
 
         <label htmlFor="nome">

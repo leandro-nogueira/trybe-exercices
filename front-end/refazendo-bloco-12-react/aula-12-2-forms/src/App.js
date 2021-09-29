@@ -29,7 +29,7 @@ class App extends React.Component {
     const { email, password } = this.state;
     return (
       <div className="App">
-        <h1>Formulário de dúvidas Revisão</h1>
+        <h1>SUPER REVISÃO</h1>
         
         <Forms
           email={ email }

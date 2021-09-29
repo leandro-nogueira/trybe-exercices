@@ -1,13 +1,18 @@
-import React from "react";
-import Inputs from "./Inputs";
-import Button from "./Button";
+import React from 'react';
+import Inputs from './Inputs';
+import Button from './Button';
 
 class Forms extends React.Component {
   
+  onSubmitForm = () => {
+    console.log("teste")
+  }
+
   render() {
-    const { email, password, handleChange, onClickBtn } = this.props;
+    const { email, password, handleChange} = this.props;
     return (
-      <form>
+      <form onSubmit={ this.onSubmitForm }>
+        <h2>Tela de Login</h2>
         <Inputs
           inputLabel="E-mail:"
           type="email"
@@ -31,9 +36,7 @@ class Forms extends React.Component {
         <br />
 
         <Button
-          typeBtn="button"
-          labelBtn="CONFIRMAR"
-          onClickBtn={ onClickBtn }
+          labelBtn="ENTRAR"
         />
 
       </form>
