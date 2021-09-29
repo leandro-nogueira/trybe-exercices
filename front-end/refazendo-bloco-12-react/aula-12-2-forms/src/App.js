@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Button from './components/Button';
+import Forms from './components/Form';
 import Inputs from './components/Inputs';
 
 class App extends React.Component {
@@ -16,9 +18,12 @@ class App extends React.Component {
     const { name, value } = target;
     this.setState({
       [name]: value,
-    })
-    console.log('to aqui')
-  } 
+    })    
+  }
+  
+  confirmSend = () => {
+    console.log('to aqui no btn')
+  }
 
   render() {
     const { email, password } = this.state;
@@ -26,29 +31,12 @@ class App extends React.Component {
       <div className="App">
         <h1>Formulário de dúvidas Revisão</h1>
         
-        <Inputs
-          inputLabel="E-mail:"
-          type="email"
-          name="email"
+        <Forms
+          email={ email }
+          password={ password }
           handleChange={ this.handleChange }
-          value={ email }
+          onClickBtn={ this.confirmSend }
         />
-
-        <br />
-
-        <Inputs
-          inputLabel="Password:"
-          type="password"
-          name="password"
-          handleChange={ this.handleChange }
-          value ={ password }
-        />
-
-        <br />
-        <br />
-        <br />
-
-        <button type="button">Confirmar</button>
 
       </div>
     );
