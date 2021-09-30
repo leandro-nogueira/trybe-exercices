@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Forms from './components/Form';
+import LoginForms from './components/LoginForm';
 
 class App extends React.Component {
 
@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>SUPER REVISÃO</h1>        
-        <Forms />
+        <LoginForms />
       </div>
     );
   }  
