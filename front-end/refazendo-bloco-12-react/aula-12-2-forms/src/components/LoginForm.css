@@ -1,0 +1,14 @@
+.Border {
+  border: 5px double red;
+  padding: 1rem;
+  max-width: 400px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.ColorText {
+  color: green;
+}
