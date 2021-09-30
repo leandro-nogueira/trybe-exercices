@@ -3,13 +3,38 @@ import Inputs from './Inputs';
 import Button from './Button';
 
 class Forms extends React.Component {
-  
-  onSubmitForm = () => {
-    console.log("teste")
+  constructor () {
+    super();
+
+    this.state = {
+      email: '',
+      password: '',
+      showEmail: false,
+      isRequired: true,
+
+    }
   }
 
+  handleChange = ({target}) => {
+    const { name, value } = target;
+    this.setState({
+      [name]: value,
+      showEmail: false,
+    })    
+  }
+  
+  onSubmitForm = (e) => { 
+    e.preventDefault();
+    this.setState({
+      showEmail: true,
+    })
+  }
+  
+
   render() {
-    const { email, password, handleChange} = this.props;
+    // const { email, password, handleChange, onSubmitForm, isRequired } = this.props;
+    const { email, password, showEmail, isRequired } = this.state;
+
     return (
       <form onSubmit={ this.onSubmitForm }>
         <h2>Tela de Login</h2>
@@ -17,7 +42,7 @@ class Forms extends React.Component {
           inputLabel="E-mail:"
           type="email"
           name="email"
-          handleChange={ handleChange }
+          handleChange={ this.handleChange }
           value={ email }
         />
 
@@ -27,8 +52,9 @@ class Forms extends React.Component {
           inputLabel="Senha:"
           type="password"
           name="password"
-          handleChange={ handleChange }
-          value ={ password }
+          handleChange={ this.handleChange }
+          value={ password }
+          isRequired={ isRequired }
         />
 
         <br />
@@ -38,6 +64,10 @@ class Forms extends React.Component {
         <Button
           labelBtn="ENTRAR"
         />
+        
+        <br />
+
+        { showEmail ? email : ''}
 
       </form>
 

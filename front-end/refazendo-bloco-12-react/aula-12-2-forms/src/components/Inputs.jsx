@@ -3,7 +3,7 @@ import React from 'react';
 class Inputs extends React.Component {
   
   render() {
-    const { handleChange, inputLabel, value, type, name} = this.props;
+    const { handleChange, inputLabel, value, type, name, isRequired} = this.props;
     return (
       <label htmlFor={ name }>
         { inputLabel }
@@ -12,7 +12,8 @@ class Inputs extends React.Component {
           name={ name }
           id={ name }
           onChange={ handleChange }
-          value={ value } 
+          value={ value }
+          required={ isRequired }
 
         />
       </label>
