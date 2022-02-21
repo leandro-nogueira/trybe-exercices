@@ -21,9 +21,19 @@ const getAll = async() => {
   );
   console.log(users)
     return users;
-}
+};
+
+const getById = async (id) => {
+  const [user] = await connection.execute(
+    `SELECT id, first_name, last_name, email
+      FROM users
+      WHERE id = ?;`, [id],
+  );
+  return user;
+};
 
 module.exports = {
   createUser,
   getAll,
+  getById,
 }

@@ -22,7 +22,15 @@ const getAll = async (_req, res, _next) => {
   return res.status(200).json(list);
 };
 
+const getById = async (req, res, _next) => {
+  const { id } = req.params;
+  const user = await USER.getById(id);
+  if (!user.length) return res.status(404).json({message: 'NOT FOUND'});
+  return res.status(200).json(user);
+}
+
 module.exports = {
   createUser,
   getAll,
+  getById,
 };
