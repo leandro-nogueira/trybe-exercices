@@ -17,8 +17,9 @@ return {
 
 const getAll = async() => { 
   const [users] = await connection.execute(
-    `SELECT * FROM users;`
+    `SELECT id, first_name, last_name, email FROM users;`
   );
+  console.log(users)
     return users;
 }
 
