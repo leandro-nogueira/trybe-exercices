@@ -50,7 +50,6 @@ router.put('/:id', async (req, res) => {
       { where: { id } },
     );
 
-    console.log('giisfsi',book);
     if(!book) return res.status(404).json({message: 'Livro não encontrado'});
     return res.status(200).json({ message: 'Livro atualizado'});
 
