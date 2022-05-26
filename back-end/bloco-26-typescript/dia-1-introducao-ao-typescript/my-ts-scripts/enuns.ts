@@ -1,4 +1,4 @@
-import readline from 'readline-sync';
+import * as readlineSync from 'readline-sync';
 
 enum Meses {
   janeiro = 'jan',
@@ -26,7 +26,7 @@ enum Seasons {
 
 const meses = Object.values(Meses);
 
-const escolhaMes = readline.keyInSelect(meses, 'Qual mes vc quer saber?');
+const escolhaMes = readlineSync.keyInSelect(meses, 'Qual mes vc quer saber?');
 
 const seasonsSouth = {
   [Seasons.outono]: [Meses.março, Meses.abril, Meses.junho],
@@ -47,7 +47,7 @@ const hemispheres = {
   Sul: seasonsSouth,
 }
 
-const escolhaHemisferio = readline.keyInSelect(Object.keys(hemispheres), 'Escolha um hemisfério!');
+const escolhaHemisferio = readlineSync.keyInSelect(Object.keys(hemispheres), 'Escolha um hemisfério!');
 
 const month = Object.values(Meses)[escolhaMes]
 
