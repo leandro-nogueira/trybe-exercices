@@ -138,37 +138,37 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 18-3: _React Hooks - useEffect e Hooks customizados_
 - [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-014-b-project-starwars-planets-search/pull/84)_
 
-##### Bloco 19: Projeto Final de Front-end :hourglass_flowing_sand:
+##### Bloco 19: Projeto Final de Front-end :white_check_mark:
 
 - [ ] 19-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais :hourglass_flowing_sand:
+##### Bloco 20: Introdução - Bancos de dados relacionais :white_check_mark:
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-3: _Filtrando dados de forma específica_
+- [x] 20-4: _Manipulando tabelas_
 - [ ] 20-5: _[Projeto - All For One]()_
 
-##### Bloco 21: Bancos de dados relacionais :hourglass_flowing_sand:
+##### Bloco 21: Bancos de dados relacionais :white_check_mark:
 
-- [ ] 21-1: _FunÃ§Ãµes mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
+- [x] 21-1: _FunÃ§Ãµes mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs e UNIONs_
+- [x] 21-3: _Stored Routines & Subqueries_
 - [ ] 21-4: _[Projeto - Vocabulary Booster]()_
 
-##### Bloco 22: Bancos de dados relacionais :hourglass_flowing_sand:
+##### Bloco 22: Bancos de dados relacionais :white_check_mark:
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
+- [x] 22-1: _Transformando ideias em um modelo de banco de dados_
+- [x] 22-2: _Normalização, Formas Normais e Dumps_
+- [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
 - [ ] 22-3: _[Projeto - One For All]()_
 
 ##### Bloco 23: Introdução - NoSQL :hourglass_flowing_sand:
 
-- [ ] 23-1: _MongoDB - Introdução_
+- [x] 23-1: _MongoDB - Introdução_
 - [ ] 23-2: _Filter Operators_
 - [ ] 23-3: _[Projeto - Data Flights]()_
 
