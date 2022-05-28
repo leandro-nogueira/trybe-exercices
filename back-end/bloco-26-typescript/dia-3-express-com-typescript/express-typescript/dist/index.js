@@ -5,11 +5,36 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const http_status_codes_1 = require("http-status-codes");
+require("express-async-errors");
+const books_routes_1 = __importDefault(require("./routes/books.routes"));
+const books_controller_1 = __importDefault(require("./controllers/books.controller"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 const PORT = 8000;
+const booksController = new books_controller_1.default();
 app.get('/', (_req, res) => {
     res.status(http_status_codes_1.StatusCodes.OK).send('Express + TypeScript');
+});
+app.use(books_routes_1.default);
+app.use((err, req, res, next) => {
+    const { name, message, details } = err;
+    console.log(`name: ${name}`);
+    switch (name) {
+        case 'validatonError':
+            res.status(http_status_codes_1.StatusCodes.BAD_REQUEST).json({ message: details[0].message });
+            break;
+        case 'NotFounError':
+            res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message });
+            break;
+        case 'ConflictError':
+            res.status(http_status_codes_1.StatusCodes.CONFLICT).json({ message });
+            break;
+        default:
+            console.error(err);
+            res.sendStatus(http_status_codes_1.StatusCodes.INTERNAL_SERVER_ERROR);
+            break;
+    }
+    next();
 });
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
