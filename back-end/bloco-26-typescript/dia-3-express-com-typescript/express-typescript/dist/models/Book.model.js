@@ -22,7 +22,7 @@ class BookModel {
     create(book) {
         return __awaiter(this, void 0, void 0, function* () {
             const { title, author, price, isbn } = book;
-            const newBook = yield this._connection.execute('INSERTO INTO books (title, price, author, isbn) VALUES (?, ?, ?, ?)', [title, price, author, isbn]);
+            const newBook = yield this._connection.execute('INSERT INTO books (title, price, author, isbn) VALUES (?, ?, ?, ?)', [title, price, author, isbn]);
             const insetId = newBook[0].insertId;
             return Object.assign({ id: insetId }, book);
         });

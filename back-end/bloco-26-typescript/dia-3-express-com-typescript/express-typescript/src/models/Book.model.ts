@@ -18,7 +18,7 @@ export default class BookModel {
   public async create(book: IBooks): Promise<IBooks> {
     const { title, author, price, isbn } = book;
     const newBook = await this._connection.execute<ResultSetHeader>(
-      'INSERTO INTO books (title, price, author, isbn) VALUES (?, ?, ?, ?)',
+      'INSERT INTO books (title, price, author, isbn) VALUES (?, ?, ?, ?)',
       [title, price, author, isbn]
     )
     const insetId = newBook[0].insertId;

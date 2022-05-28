@@ -25,8 +25,13 @@ class BooksController {
             const { id } = req.params;
             const book = yield this.bookService.getById(+id);
             if (!book)
-                res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: "livro não encontrado" });
+                res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: "book not found!" });
             res.status(http_status_codes_1.StatusCodes.OK).json(book);
+        });
+        this.create = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const book = req.body;
+            yield this.bookService.create(book);
+            res.status(http_status_codes_1.StatusCodes.CREATED).json({ message: 'created sucess!' });
         });
     }
 }

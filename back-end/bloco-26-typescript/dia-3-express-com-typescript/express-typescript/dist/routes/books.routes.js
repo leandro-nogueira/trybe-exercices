@@ -9,4 +9,5 @@ const router = (0, express_1.Router)();
 const booksController = new books_controller_1.default();
 router.get('/books', booksController.getAll);
 router.get('/books/:id', booksController.getById);
+router.post('/books/', booksController.create);
 exports.default = router;
