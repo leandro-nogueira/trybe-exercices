@@ -25,7 +25,10 @@ export default class BookService {
   }
 
   public async update(id: number, book: IBooks){
-    if (!(await this.getById(id))) throw new NotFoundError("Book not found")
     await this._model.update(id, book);
+  }
+
+  public async delete(id: number) {
+    await this._model.delete(id);
   }
 };

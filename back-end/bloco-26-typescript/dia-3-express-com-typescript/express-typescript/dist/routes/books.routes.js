@@ -12,4 +12,5 @@ router.get('/books', booksController.getAll);
 router.get('/books/:id', booksController.getById);
 router.post('/books', books_middleware_1.default, booksController.create);
 router.put('/books/:id', books_middleware_1.default, booksController.update);
+router.delete('/books/:id', booksController.delete);
 exports.default = router;

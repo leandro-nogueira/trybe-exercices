@@ -23,10 +23,10 @@ class BooksController {
         });
         this.getById = (req, res) => __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            const book = yield this.bookService.getById(+id);
-            if (!book)
+            const bookFound = yield this.bookService.getById(+id);
+            if (!bookFound)
                 res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: "book not found!" });
-            res.status(http_status_codes_1.StatusCodes.OK).json(book);
+            res.status(http_status_codes_1.StatusCodes.OK).json(bookFound);
         });
         this.create = (req, res) => __awaiter(this, void 0, void 0, function* () {
             const book = req.body;
@@ -36,8 +36,19 @@ class BooksController {
         this.update = (req, res) => __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
             const book = req.body;
+            const bookFound = yield this.bookService.getById(+id);
+            if (!bookFound)
+                res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: "book not found!" });
             yield this.bookService.update(+id, book);
             res.status(http_status_codes_1.StatusCodes.ACCEPTED).json({ message: 'updated sucess!' });
+        });
+        this.delete = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const { id } = req.params;
+            const bookFound = yield this.bookService.getById(+id);
+            if (!bookFound)
+                res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: "book not found!" });
+            yield this.bookService.delete(+id);
+            res.status(http_status_codes_1.StatusCodes.OK).json({ message: 'deleted!' });
         });
     }
 }

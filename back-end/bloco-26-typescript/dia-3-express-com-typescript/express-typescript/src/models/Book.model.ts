@@ -41,9 +41,12 @@ export default class BookModel {
       `UPDATE books SET title=?, price=?, author=?, isbn=? WHERE id=?`,
       [title, price, author, isbn, id]
     )
-      
-  
   }
 
+  public async delete(id: number) {
+    await this._connection.execute(
+      `DELETE FROM books WHERE id=?`, [id]
+    )
+  }
 
 }
