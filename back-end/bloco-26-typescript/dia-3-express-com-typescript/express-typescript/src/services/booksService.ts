@@ -1,3 +1,4 @@
+import { NotFoundError } from "restify-errors";
 import IBooks from "../interfaces/book.interface";
 import BookModel from "../models/Book.model";
 import connection from "../models/connection";
@@ -21,5 +22,10 @@ export default class BookService {
 
   public async create(book: IBooks): Promise<IBooks> {
     return await this._model.create(book);
+  }
+
+  public async update(id: number, book: IBooks): Promise<IBooks> {
+    if (!this.getById(id)) throw new NotFoundError("Book not found")
+    return await this._model.update(id, book);
   }
 };
