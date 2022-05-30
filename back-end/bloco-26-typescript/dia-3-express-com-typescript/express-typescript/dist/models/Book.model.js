@@ -35,5 +35,11 @@ class BookModel {
             return book;
         });
     }
+    update(id, book) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { title, author, price, isbn } = book;
+            yield this._connection.execute(`UPDATE books SET title=?, price=?, author=?, isbn=? WHERE id=?`, [title, price, author, isbn, id]);
+        });
+    }
 }
 exports.default = BookModel;

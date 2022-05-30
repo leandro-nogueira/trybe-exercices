@@ -25,9 +25,9 @@ export default class BooksController {
   }
 
   public update = async (req: Request, res: Response) => {
-    const { id } = req.params;
-    const book = req.body;
-    await this.bookService.update(+id, book);
-    res.status(StatusCodes.ACCEPTED).json({message: 'updated sucess!'})
+      const { id } = req.params;
+      const book = req.body;
+      await this.bookService.update(+id, book);
+      res.status(StatusCodes.ACCEPTED).json({message: 'updated sucess!'});
   }
 }

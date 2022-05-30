@@ -24,8 +24,8 @@ export default class BookService {
     return await this._model.create(book);
   }
 
-  public async update(id: number, book: IBooks): Promise<IBooks> {
-    if (!this.getById(id)) throw new NotFoundError("Book not found")
-    return await this._model.update(id, book);
+  public async update(id: number, book: IBooks){
+    if (!(await this.getById(id))) throw new NotFoundError("Book not found")
+    await this._model.update(id, book);
   }
 };

@@ -33,6 +33,12 @@ class BooksController {
             yield this.bookService.create(book);
             res.status(http_status_codes_1.StatusCodes.CREATED).json({ message: 'created sucess!' });
         });
+        this.update = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const { id } = req.params;
+            const book = req.body;
+            yield this.bookService.update(+id, book);
+            res.status(http_status_codes_1.StatusCodes.ACCEPTED).json({ message: 'updated sucess!' });
+        });
     }
 }
 exports.default = BooksController;

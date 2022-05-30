@@ -35,15 +35,14 @@ export default class BookModel {
       return book;
   }
 
-  public async update(id: number, book: IBooks): Promise<IBooks> {
+  public async update(id: number, book: IBooks) {
     const { title, author, price, isbn } = book;
-    const [result] = await this._connection.execute(
+    await this._connection.execute(
       `UPDATE books SET title=?, price=?, author=?, isbn=? WHERE id=?`,
       [title, price, author, isbn, id]
     )
-      const [bookUpdated] = result as IBooks[];
-
-      return bookUpdated;
+      
+  
   }
 
 
